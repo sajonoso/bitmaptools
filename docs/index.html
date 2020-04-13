@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Redirection</title>
+    <meta name="description" content="Best redirection page" />
+    <link rel="shortcut icon" type="image/x-icon" href="data:image/x-icon;base64,00000100010001010000010018003000000016000000280000000100000002000000010018000000000000000000000000000000000000000000000000000000ff0000000000" />
+    <!-- set target URL below -->
+    <meta http-equiv="refresh" content="0; url=https://sajonoso.github.io/bitmaptools/bitmap-test.htm" />
+  </head>
+  <body>
+    <!-- set target URL below -->
+    <p>The page has moved to: <a href="https://sajonoso.github.io/bitmaptools/bitmap-test.htm">this page</a></p>
+    <noscript>Your browser does not support meta refresh or javascript and can not automatically redirect</noscript>
+    <script>
+      var m = document.querySelector('meta[http-equiv=refresh]')
+      setTimeout(function() { window.location.href = m.getAttribute('content').split('url=')[1]; }, 0)
+    </script>
+  </body>
+</html>
